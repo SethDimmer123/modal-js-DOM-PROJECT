@@ -41,3 +41,6 @@ closeBtn.addEventListener("click", function() {
 
 
 // BY DEFAULT I AM HIDING THE MODAL BY DEFAULT IN CSS .modal-overlay
+
+
+// 
