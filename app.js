@@ -11,20 +11,20 @@ const closeBtn = document.querySelector(".close-btn")/**closes the modal overlay
 
 modalBtn.addEventListener("click", function(){
     console.log(modalOverlay.classList)
-    // if(modalOverlay.classList.contains('open-modal')){
-    //     modalOverlay.classList.remove('open-modal')
-    //     /*if the modal overlay has (contains) the class called open-modal
-    //     class ALREADY then i would want to remove it*/
+    if(modalOverlay.classList.contains('open-modal')){
+        modalOverlay.classList.remove('open-modal')
+        /*if the modal overlay has (contains) the class called open-modal
+        class ALREADY then i would want to remove it*/
 
-    //     modalOverlay.classList.remove('open-modal')
-    // }
-    // else{
-    //     modalOverlay.classList.add('open-modal')
-    // }
+        modalOverlay.classList.remove('open-modal')
+    }
+    else{
+        modalOverlay.classList.add('open-modal')
+    }
 
     // (line 27) THIS IS THE SECOND AND SHORTER WAY OF TOGGLING THE open modal button
 
-    modalOverlay.classList.toggle('open-modal')
+    // modalOverlay.classList.toggle('open-modal')
 });
 
 
@@ -37,3 +37,7 @@ closeBtn.addEventListener("click", function() {
     console.log(modalOverlay.classList)
     modalOverlay.classList.remove('open-modal')
 })
+
+
+
+// BY DEFAULT I AM HIDING THE MODAL BY DEFAULT IN CSS .modal-overlay

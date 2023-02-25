@@ -221,7 +221,7 @@ Modal
 }
 /* OPEN/CLOSE MODAL */
 .open-modal {
-  visibility: visible;
+  visibility: visible; /*we add this class to the modal overlay when we click on the modal-btn*/
   z-index: 10;
 }
 .modal-container {
